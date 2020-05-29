@@ -6,26 +6,31 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: #eee;
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .container {
   width: 100%;
-  max-width: 80rem;
-  padding: 2rem 2rem;
+  max-width: 120rem;
+  margin: auto;
+  padding: 1.5rem 1.5rem;
 }
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   grid-template-areas: 
     'img-1 img-2 img-3 img-3'
     'img-1 img-4 img-5 img-6'
@@ -34,7 +39,7 @@ body {
 
 .image-gallery a {
   width: 100%;
-  height: 12rem;
+  height: 20rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,8 +51,8 @@ body {
 }
 
 .icon {
-  font-size: 2rem;
-  padding: 0.5rem 1.5rem;
+  font-size: 3rem;
+  padding: 1rem 3rem;
   border: 2px solid blue;
   position: relative;
   z-index: 100;
@@ -75,7 +80,7 @@ body {
 .img-1 {
   grid-area: img-1;
   background-image: url("images/img_1.png");
-  min-height: 25rem;
+  min-height: 41.5rem;
 }
 
 .img-2 {
@@ -101,7 +106,7 @@ body {
 .img-6 {
   grid-area: img-6;
   background-image: url("images/img_6.jpeg");
-  min-height: 25rem;
+  min-height: 41.5rem;
 }
 
 .img-7 {
@@ -125,15 +130,15 @@ body {
   }
 
   .image-gallery a {
-    height: 8rem;
+    height: 20rem;
   }
 
   .img-1 {
-    min-height: 17rem;
+    min-height: 41.5rem;
   }
 
   .img-6 {
-    min-height: 8rem;
+    min-height: 20rem;
   }
 }
 
@@ -154,7 +159,7 @@ body {
   .image-gallery a,
   .img-1,
   .img-2 {
-    min-height: 12rem;
-    height: 12rem;
+    min-height: 30rem;
+    height: 30rem;
   }
 }
